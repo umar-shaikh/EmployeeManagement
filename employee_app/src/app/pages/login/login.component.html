@@ -1,0 +1,49 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="login-header">
+      <div class="icon-wrapper">🔐</div>
+      <h1>Welcome Back</h1>
+      <p>Sign in to your account</p>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          placeholder="Enter your email"
+          required
+          [(ngModel)]="loginObj.email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Contact Number</label>
+        <input
+          type="password"
+          name="contactNo"
+          class="form-control"
+          placeholder="Enter your password"
+          required
+          [(ngModel)]="loginObj.contactNo"
+        />
+      </div>
+
+      
+
+      <!-- <div class="forgot-password">
+        <a href="#forgot">Forgot Password?</a>
+      </div> -->
+
+      <button type="button" class="btn-login" (click)="login()">
+        Sign In
+      </button>
+    </form>
+
+    <div class="login-footer">
+      Don't have an account? <a href="#signup">Sign up here</a>
+    </div>
+  </div>
+</div>

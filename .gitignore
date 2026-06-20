@@ -1,0 +1,12 @@
+# .NET
+.vs/
+bin/
+obj/
+
+# Angular
+node_modules/
+.angular/
+
+# User files
+*.user
+*.suo
